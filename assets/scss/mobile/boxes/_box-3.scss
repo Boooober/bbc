@@ -1,0 +1,87 @@
+.box-3{
+//  .box-container{
+//    background-color: rgba(7,36,57,.7);
+//  }
+  .box-item{
+    margin-bottom: 30px;
+    font-size: 0;
+    border: 1px solid rgba(255,255,255,.1);
+    width: 100%;
+    padding: 30px;
+    .number{
+      width: 25%;
+      font-size: 110px;
+      line-height: 1em;
+      font-weight: 100;
+      text-align: center;
+      display:inline-block;
+      vertical-align: middle;
+      .spec{
+        position: relative;
+        margin-right:-20px;
+        span{
+          position: relative;
+          right: 42px;
+          bottom: 24px;
+          font-size: 40px;
+        }
+      }
+    }
+    .desc{
+      width: 75%;
+      font-size: 20px;
+      padding-left: 30px;
+      line-height: 26px;
+      display:inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (max-width:720px){
+  .box-3 .box-item{
+    .number {
+      width: 35%;
+    }
+    .desc {
+      width: 65%;
+    }
+  }
+}
+
+@media (max-width:560px){
+  .box-3 .box-item{
+    .number {
+      font-size: 80px;
+      .spec{
+        span{
+          right: 31px;
+          bottom: 18px;
+          font-size: 30px;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width:480px){
+  .box-3{
+    .box-item{
+      text-align: center;
+      .number, .desc{
+        width:100%;
+      }
+      .number{
+        font-size: 100px;
+        .spec{
+          span{
+            right: 36px;
+            bottom: 23px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}

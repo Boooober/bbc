@@ -1,0 +1,159 @@
+
+.box-6{
+  color:black;
+
+  .box-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  .content-1, .content-2{
+    margin: 0 -20px;
+  }
+  .content-1{
+    .col{
+      .cell{
+        vertical-align: middle;
+      }
+      &:hover{
+        .date{
+          background-color: #e8e8e8;
+        }
+      }
+    }
+  }
+
+  .content-2{
+    .col{
+      img{
+        width:100%;
+      }
+    }
+  }
+
+  .col{
+    width: 33.33%;
+    padding:0 20px;
+    float:left;
+  }
+  .event-slide{
+
+    .date{
+      width:40%;
+      text-align:center;
+      border:2px solid #e8e8e8;
+      transition: .3s;
+      vertical-align: middle;
+      p{
+        span{
+          font-size: 70px;
+          display: block;
+          font-weight: 100;
+        }
+      }
+    }
+    .img{
+      width:60%;
+      img{
+        width:100%;
+      }
+    }
+
+  }
+  .desc {
+    margin: 15px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.event-slider{
+  position:relative;
+  margin-bottom: 20px;
+  .owl-prev, .owl-next{
+    position:absolute;
+    z-index: 1;
+    top:30%;
+
+    border: 1px solid rgba(0,0,0,.3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+
+    &:before{
+      position: absolute;
+      margin: 0;
+      top:50%;
+      left: 50%;
+      width: 25%;
+      height: 25%;
+      content: '';
+      display:block;
+      transform: rotate(45deg) translate(-75%);
+      border: 2px solid transparent;
+    }
+  }
+
+  .owl-prev{
+    left: -30px;
+    &:before{
+      margin-left: 9%;
+      border-left-color: black;
+      border-bottom-color: black;
+    }
+  }
+  .owl-next{
+    right: -30px;
+    &:before{
+      margin-left: -9%;
+      border-right-color: black;
+      border-top-color: black;
+    }
+  }
+}
+
+
+@media (min-width: 1000px ) {
+  .event-slider .owl-prev, .event-slider .owl-next {
+    top: 27%;
+  }
+}
+
+
+
+@media (max-width: 768px){
+
+  .event-slider{
+    .owl-prev, .owl-next{
+      width: 35px;
+      height: 35px;
+      &:before{
+        font-size: 32px;
+      }
+    }
+    .owl-prev {
+      left: -15px;
+    }
+    .owl-next {
+      right: -15px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+  .box-6 .col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 460px) {
+  .box-6 {
+    .col {
+      width: 100%;
+      float: none;
+      margin-bottom: 35px;
+    }
+  }
+}

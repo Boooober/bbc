@@ -1,0 +1,183 @@
+.contacts-box{
+  background: #0C1E30;
+  position: relative;
+
+  #footer-text{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .contacts-list{
+    max-width: 680px;
+    margin: 0 auto 30px;
+    text-align: right;
+  }
+  h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  .row{
+    margin: 0 -10px;
+  }
+  .col{
+    float: left;
+    width: 23%;
+    padding: 0 10px;
+    &:nth-child(3){
+      width: 31%;
+    }
+  }
+  p{
+    margin-bottom: 10px;
+  }
+  b{
+    display: block;
+    color: #969696;
+  }
+  .office{
+    margin-bottom: 30px;
+  }
+
+
+  .map{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .centered {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .distribution-map {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    &>img {
+      width: 100%;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+
+    h4{
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    a{
+      display: inline-block;
+      padding: 2px 10px;
+      font-size: 14px;
+      border: 2px solid rgba(255,255,255,0.25);
+      border-radius: 4px;
+      &:hover{
+        background-color: rgba(255,255,255,0.1);
+      }
+    }
+
+    .map-point {
+      cursor: pointer;
+      outline: none;
+      z-index: 0;
+      overflow: hidden;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 9px;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+      opacity: 0.8;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s, background-color 0.25s ease-in-out 0.25s;
+      background: rgba(26, 26, 26, 0.85);
+      border: 3px solid #7fcff7;
+
+
+
+      .content {
+        display: table;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        padding: 15px;
+        overflow: overlay;
+      }
+
+      &:active, &:focus{
+//      &:hover{
+        margin: 0;
+        padding: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+        width: 200px;
+        height: 120px;
+        color: #e5e5e5;
+        z-index: 1;
+        background: rgba(11, 17, 23, 0.8);
+//        transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+
+        .content {
+          filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+          opacity: 1;
+          transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:660px){
+  .contacts-box{
+    .contacts-list {
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h3{
+      margin-bottom: 45px;
+    }
+    .col{
+      width: 50%;
+
+      &:nth-child(3){
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media(max-width:460px){
+  .contacts-box{
+    span{
+      display: block;
+    }
+    .map{
+      display: none;
+    }
+  }
+}
+
+@media(max-width:360px){
+  .contacts-box{
+    .col{
+      width: 100%;
+      &:nth-child(3){
+        width: 100%;
+      }
+    }
+    .office:first-child{
+      margin-bottom: 10px;
+    }
+  }
+}

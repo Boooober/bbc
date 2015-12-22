@@ -1,0 +1,52 @@
+.box-2{
+  .col{
+    width: 50%;
+    &:nth-child(even){
+      float: right;
+    }
+  }
+  .box-container{
+    background-color: rgba(7, 36, 57, 0.7);
+  }
+  .item-list{
+    border: 2px solid rgba(255,255,255,.2);
+    padding: 20px 30px;
+  }
+  .item-title{
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .description {
+    display: none;
+    margin-top: 40px;
+    p{
+      line-height: 26px;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+@media (max-width: 620px){
+  .box-2{
+    .item-title{
+      font-size: 24px;
+    }
+    .description p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 580px){
+  .box-2{
+    .col{
+      width:100%;
+    }
+    .item-title{
+      font-size: 26px;
+    }
+  }
+}

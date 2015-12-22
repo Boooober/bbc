@@ -1,0 +1,61 @@
+.box-container{
+  position:relative;
+  padding:60px;
+  .box-title{
+    font-size: 70px;
+    margin-bottom: 50px;
+//    text-align: center;
+    font-weight: 100;
+  }
+}
+
+.row{
+  margin: -10px;
+  .col {
+    padding: 10px;
+    float:left;
+  }
+}
+
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width:568px){
+}
+
+@media (max-width: 360px){
+  .box-container{
+    padding:60px 20px;
+    .box-title {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+}
+
+
+.section {
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@import 'boxes/box-1';
+@import 'boxes/box-2';
+@import 'boxes/box-3';
+@import 'boxes/box-4';
+@import 'boxes/contacts';
+//@import 'boxes/box-5';
+//@import 'boxes/box-6';
+//@import 'boxes/box-7';
+//@import 'boxes/box-8';
+
+
+
+
+
+
