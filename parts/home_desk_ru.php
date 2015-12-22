@@ -437,8 +437,6 @@
     <div id="contacts-box" class="section contacts-box">
         <div class="box-container">
 
-            <div class="box-image"></div>
-
 <!--            <h2 class="box-title">Contacts</h2>-->
             <div class="box-content">
 
