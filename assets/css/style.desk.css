@@ -1425,6 +1425,10 @@ a {
     .box-3 .box-content.table .box-item.cell .number {
       margin-right: 5%; } }
 
+.box-4 .fp-tableCell {
+  display: table-cell;
+  vertical-align: middle; }
+
 .box-4 .box-content {
   margin-left: 270px; }
 
@@ -1553,7 +1557,8 @@ a {
 .box-6 {
   color: black; }
   .box-6 .box-title {
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 1em;
     margin-bottom: 15px; }
   .box-6 .content-1, .box-6 .content-2 {
     margin: 0 -20px; }
@@ -1592,8 +1597,8 @@ a {
     z-index: 1;
     top: 30%;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: white; }
     .event-slider .owl-prev:before, .event-slider .owl-next:before {
@@ -1658,13 +1663,15 @@ a {
     padding: 0 50px;
     float: left;
     margin-bottom: 40px; }
+  .box-7 .box-content {
+    margin-bottom: -40px; }
   .box-7 figure {
-    width: 250px;
+    width: 220px;
     float: left; }
     .box-7 figure img {
       width: 100%; }
   .box-7 .item-content {
-    margin-left: 280px;
+    margin-left: 250px;
     position: relative; }
     .box-7 .item-content h2 {
       text-transform: uppercase;
@@ -1718,10 +1725,34 @@ a {
     margin: 0; } }
 
 .contacts-box {
-  background: url("../images/contact_us.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  display: table;
+  width: 100%; }
+  .contacts-box .contacts-box-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+    .contacts-box .contacts-box-bg:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("../images/contact_us.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right center; }
+  .contacts-box .animate {
+    overflow: hidden; }
+    .contacts-box .animate:before {
+      -webkit-animation: growimage 30s 0s linear infinite alternate;
+              animation: growimage 30s 0s linear infinite alternate; }
+  .contacts-box .box-container .box-title {
+    margin-bottom: 30px; }
+  .contacts-box .fp-tableCell {
+    display: table-cell;
+    vertical-align: middle; }
   .contacts-box #footer-text {
     position: absolute;
     width: 100%;
@@ -1767,7 +1798,8 @@ a {
       width: 100%;
       position: relative;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      opacity: 0.4; }
     .contacts-box .distribution-map h4 {
       font-weight: 700;
       margin-bottom: 15px; }
@@ -1849,6 +1881,14 @@ a {
       width: 100%; }
   .contacts-box .office:first-child {
     margin-bottom: 10px; } }
+
+@media (max-width: 730px) {
+  .contacts-box .fp-tableCell {
+    display: block; }
+  .contacts-box .box-container {
+    padding-top: 120px; }
+  .contacts-box #footer-text {
+    position: relative; } }
 
 /* Overlay style */
 .overlay {
