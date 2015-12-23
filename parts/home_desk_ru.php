@@ -554,14 +554,6 @@
                 </div>
             </div>
         </div>
-        <div id="footer-text">
-            <div id="copy-witty">
-                <div class="logo">
-                    <span>Made in</span>
-                    <a href="http://witty-digital.com" target="_blank"><img src="<?php echo $templateurl; ?>/assets/images/witty-logo.png" alt="copyright witty-digital agency"/></a>
-                    <b>Witty Digital</b>
-                </div>
-            </div>
-        </div>
+        <?php get_template_part('parts/witty_copy'); ?>
     </div>
 </div>
