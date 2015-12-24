@@ -157,13 +157,26 @@
   }
 }
 
-@media(max-width:460px){
+@media(max-width:580px){
   .contacts-box{
     span{
       display: block;
     }
     .map{
       display: none;
+    }
+    .col{
+      width: 100%;
+      &:nth-child(3) {
+        width: 100%;
+      }
+    }
+
+    h3{
+      font-size: 70px;
+      line-height: 1em;
+      font-weight: 100;
+      margin-bottom: 70px;
     }
   }
 }

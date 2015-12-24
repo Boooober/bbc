@@ -447,19 +447,13 @@
 			            <div class="col">
 				            <div class="office">
 					            <p>Europe Office </p>
-	                            <b>
-	                                + 33 753 67 43 42<br />
-	                                email@europe.com
-	                             </b>
+	                            <b>+ 33 753 67 43 42<br />email@europe.com</b>
 				            </div>
 			            </div>
 			            <div class="col">
 				            <div class="office">
 					            <p>U.S.A. Office</p>
-	                            <b>
-	                                + 33 753 67 43 42<br />
-	                                email@usa.com
-	                             </b>
+	                            <b>+ 33 753 67 43 42<br />email@usa.com </b>
 				            </div>
 			            </div>
 			            <div class="col">
@@ -553,7 +547,9 @@
                     </div>
                 </div>
             </div>
+<!--            <div id="copyright">--><?php //get_template_part('parts/witty_copy'); ?><!--</div>-->
         </div>
+
         <?php get_template_part('parts/witty_copy'); ?>
     </div>
 </div>

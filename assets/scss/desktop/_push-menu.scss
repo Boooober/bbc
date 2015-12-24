@@ -484,3 +484,29 @@
 //    margin: 0 10px;
 //  }
 //}
+
+
+@media (max-height: 650px){
+  .main-part {
+    margin-top: 45px;
+
+
+    .main-menu ul li a{
+      font-size: 40px;
+    }
+
+    .form{
+      .form-title{
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
+      .line{
+        margin-top: 20px;
+      }
+      .form-input {
+        font-size: 18px;
+      }
+    }
+
+  }
+}

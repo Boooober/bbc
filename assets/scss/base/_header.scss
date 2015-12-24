@@ -27,11 +27,12 @@
   font-size: 0;
   .logo {
     position: static;
-    margin-top: -15px;
+//    margin-top: -15px;
     float:left;
     transition: .3s;
     svg{
-      width:60px;
+      display:block;
+      height:60px;
       fill: white;
     }
   }
@@ -126,13 +127,3 @@
   }
 }
 
-
-
-@media (max-width: 320px) {
-//  .header-content > div:nth-child(5) {
-//    margin-left: 0;
-//  }
-  .header-content .lang-menu li {
-    margin-right: 5px;
-  }
-}

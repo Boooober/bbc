@@ -205,3 +205,13 @@ function bbc_mobile_detect () {
 }
 
 include 'includes/send_email.php';
+
+
+pll_register_string('contacts', 'Contacts');
+pll_register_string('contacts', 'Form title');
+pll_register_string('contacts', 'Your name');
+pll_register_string('contacts', 'Your name');
+pll_register_string('contacts', 'Your phone');
+pll_register_string('contacts', 'Your email');
+pll_register_string('contacts', 'Your question');
+pll_register_string('contacts', 'SEND');

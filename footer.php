@@ -129,7 +129,7 @@
 
                     <div class="col right">
                         <div class="form">
-                            <p class="form-title"><?php pll_e('Form title'); ?> <b>Bourbon&Co</b></p><!--Добро пожаловать в клуб консьерж-сервиса-->
+                            <p class="form-title"><?php pll_e('Form title'); ?> <b>Bourbon&Co</b></p>
                             <form id="feedback-form" action="">
                                 <div class="line">
                                     <lable for="fname" class="lable-none"><?php pll_e('Your name'); ?></lable>
@@ -138,7 +138,7 @@
 
                                 <div class="line">
                                     <lable for="fphone" class="lable-none"><?php pll_e('Your telephone'); ?></lable>
-                                    <input class="form-input" type="text" name="fphone" id="fphone" placeholder="<?php pll_e('Your telephone'); ?>"/>
+                                    <input class="form-input" type="text" name="fphone" id="fphone" placeholder="<?php pll_e('Your phone'); ?>"/>
                                 </div>
 
                                 <div class="line">
@@ -164,8 +164,8 @@
                 <div class="add-info">
                     <div class="contacts">
                         <h3><?php pll_e('Contacts'); ?></h3>
-                        <p><?php pll_e('Phone Number'); ?><!--+ 33 753 67 43 42--></p>
-                        <p><?php pll_e('bonjour@bbluxurytime.com'); ?></p>
+                        <p>33 753 67 43 42</p>
+                        <p>bonjour@bbluxurytime.com</p>
                     </div>
                     <div class="soc-icons">
                         <ul>

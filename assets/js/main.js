@@ -19,10 +19,10 @@ jQuery( document ).ready(function( $ ) {
     var windowWidth = $(window).width();
 
 
-
+    var anchors = ['home', 'service', 'facts', 'app', 'news', 'charter', /*'qrent',*/ 'contacts' ];
 
     $('#fullpage').fullpage({
-        anchors:['home', 'service', 'facts', 'app', 'news', 'charter', /*'qrent',*/ 'contacts' ],
+        anchors: anchors,
         scrollOverflow: true,
         onLeave: function(index, nextIndex, direction){
             var leavingSection = $(this);
@@ -85,7 +85,7 @@ jQuery( document ).ready(function( $ ) {
     }
 
     function removeNext(){
-        if(window.location.hash == '#charter' || window.location.hash == '#footer'){
+        if(window.location.hash == '#'+anchors[anchors.length - 1]){
             $('.next').css('display', 'none');
         }else{
             $('.next').css('display', 'block');
@@ -135,8 +135,11 @@ jQuery( document ).ready(function( $ ) {
                 items:2
             },
             1000:{
+                items:3
+            },
+            1200:{
                 slideBy: 1,
-                items:3,
+                items:4,
                 loop:false
             }
         }
@@ -242,74 +245,6 @@ jQuery( document ).ready(function( $ ) {
 
 
 
-//    http://tympanus.net/Development/FullscreenOverlayStyles/index7.html
-//
-//    (function() {
-//        var container = document.querySelector( 'div.container' ),
-//            triggerBttn = document.getElementById( 'trigger-overlay' ),
-//            overlay = document.querySelector( 'div.overlay' ),
-//            closeBttn = overlay.querySelector( 'button.overlay-close'),
-//            html = document.querySelector('html');
-//        transEndEventNames = {
-//            'WebkitTransition': 'webkitTransitionEnd',
-//            'MozTransition': 'transitionend',
-//            'OTransition': 'oTransitionEnd',
-//            'msTransition': 'MSTransitionEnd',
-//            'transition': 'transitionend'
-//        },
-//            transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-//            support = { transitions : Modernizr.csstransitions };
-//
-//        function toggleOverlay() {
-//            if( classie.has( overlay, 'open' ) ) {
-//
-//
-//                classie.remove( overlay, 'open' );
-//                classie.remove( container, 'overlay-open' );
-//                classie.remove( html, 'hide-all' );
-//                classie.add( overlay, 'close' );
-//
-//                if(windowWidth > 768){
-//                    $.fn.fullpage.setAllowScrolling(true);
-//                }
-//
-//
-//                var onEndTransitionFn = function( ev ) {
-//                    if( support.transitions ) {
-//                        if( ev.propertyName !== 'visibility' ) return;
-//                        this.removeEventListener( transEndEventName, onEndTransitionFn );
-//                    }
-//                    classie.remove( overlay, 'close' );
-//                };
-//                if( support.transitions ) {
-//                    overlay.addEventListener( transEndEventName, onEndTransitionFn );
-//                }
-//                else {
-//                    onEndTransitionFn();
-//                }
-//            }
-//            else if( !classie.has( overlay, 'close' ) ) {
-//                classie.add( overlay, 'open' );
-//                classie.add( container, 'overlay-open' );
-//                classie.add( html, 'hide-all' );
-//
-//                if(windowWidth > 768){
-//                    $.fn.fullpage.setAllowScrolling(false);
-//                }
-//
-//                $(document).find('video').each(function(){
-//                    $(this)[0].pause();
-//                });
-//
-//
-//            }
-//        }
-//
-//        triggerBttn.addEventListener( 'click', toggleOverlay );
-//        closeBttn.addEventListener( 'click', toggleOverlay );
-//    })();
-
-
 //    push-page from http://tympanus.net/Development/FullscreenOverlayStyles/
 
     (function() {
@@ -339,23 +274,11 @@ jQuery( document ).ready(function( $ ) {
         function toggleOverlay() {
             //close overlay
 
-
-
-//            if( classie.has( overlay, 'overlay-contentpush' ) ){
-//                opened = 'contentpush';
-//            } else if( classie.has( overlay, 'overlay-contentpull' ) ){
-//                opened = 'contentpull';
-//            }
-
             if( classie.has( overlay, 'open' ) ) {
                 classie.remove( overlay, 'open' );
                 classie.remove( html, 'hide-all' );
                 classie.remove( container, 'overlay-open' );
 
-//                }
-//                classie.remove( container, opened );
-//                if( (!classie.has( container, 'contentpush' ) &&  classie.has( container, 'contentpull' )) || (!classie.has( container, 'contentpull' ) && classie.has( container, 'contentpush' )) ){
-//                    classie.remove( container, 'overlay-open' );
                 $.fn.fullpage.setAllowScrolling(true);
 
 
@@ -514,7 +437,6 @@ jQuery( document ).ready(function( $ ) {
                 }
             });
         }
-
 
     })();
 });

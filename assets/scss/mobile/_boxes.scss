@@ -23,11 +23,13 @@
 }
 
 @media (max-width:568px){
+  .box-container{
+    padding: 60px 20px;
+  }
 }
 
 @media (max-width: 360px){
   .box-container{
-    padding:60px 20px;
     .box-title {
       font-size: 40px;
       text-align: center;

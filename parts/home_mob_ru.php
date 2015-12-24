@@ -6,35 +6,7 @@
 
         <h2 class="box-title">Bourbon Lifestyle Management</h2>
         <div class="box-content">
-            <p class="description">Лидер в области предоставления профессиональных услуг в сфере Lifestyle по всему миру. С нами Вы получаете полноценную возможность, управлять своим личным временем 24 часа в сутки и 7 дней в неделю не выходя из дома, отеля или офиса. Из года в год мы создаем самые яркие впечатления, незабываемые встречи и комфортные условия для вашей жизни и отдыха в Монако, Куршевеле, Майами. Установите мобильное приложение Bourbon и пользуйтесь всеми его привилегиями уже сегодня.</p>
-<!--            <div class="item-list">-->
-<!--                <div class="row">-->
-<!--                    <div class="col">-->
-<!--                        <div class="item slide-trigger">-->
-<!--                            <p class="item-title">Bonjour</p>-->
-<!--                            <p class="description">Bourbon lifestile management – признанный лидер в области предоставления профессиональных услуг в сфере Lifestyle по всему миру.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col">-->
-<!--                        <div class="item slide-trigger">-->
-<!--                            <p class="item-title">Bourbon Lifestyle</p>-->
-<!--                            <p class="description">С нами Вы получаете полноценную возможность, управлять своим личным временем 24 часа в сутки и 7 дней в неделю не выходя из дома, отеля или офиса.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                        <div class="col">-->
-<!--                            <div class="item slide-trigger">-->
-<!--                                <p class="item-title">Bonjour</p>-->
-<!--                                <p class="description">Из года в год мы создаем самые яркие впечатления, незабываемые встречи и комфортные условия для вашей жизни и отдыха в Монако, Куршевеле, Майами.</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="col">-->
-<!--                            <div class="item slide-trigger">-->
-<!--                                <p class="item-title">Bourbon Lifestyle</p>-->
-<!--                                <p class="description">В распоряжении наших клиентов – лучшие курорты, роскошные апартаменты, эксклюзивные автомобили, яхты в чартер и многое другое. Установите мобильное приложение Bourbon и пользуйтесь всеми его привилегиями уже сегодня.</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                </div>-->
-<!--            </div>-->
+            <p class="description">Предоставляем профессиональные услуги в сфере Lifestyle по всему миру. С нами Вы получаете полноценную возможность, управлять своим личным временем 24 часа в сутки и 7 дней в неделю не выходя из дома, отеля или офиса. Из года в год мы создаем самые яркие впечатления, незабываемые встречи и комфортные условия для вашей жизни и отдыха. Установите мобильное приложение Bourbon и пользуйтесь всеми его привилегиями уже сегодня.</p>
         </div>
     </div>
 </div>
@@ -178,37 +150,31 @@
 		<!--            <h2 class="box-title">Contacts</h2>-->
 		<div class="box-content">
 
-			<div class="contacts-list">
-				<h3>Contact Us</h3>
-				<div class="row">
-					<div class="col">
-						<div class="office">
-							<p>Europe Office </p>
-							<b>
-								+ 33 753 67 43 42<br />
-								email@europe.com
-								 </b>
-						</div>
-					</div>
-					<div class="col">
-						<div class="office">
-							<p>U.S.A. Office</p>
-							<b>
-								+ 33 753 67 43 42<br />
-								email@usa.com
-								 </b>
-						</div>
-					</div>
-					<div class="col">
-						<p>Advertising <span>& Marketing office</span><b>marketing@bourbon.mc </b></p>
-						<p>New Business<b>newbusiness@bourbon.mc</b></p>
-					</div>
-					<div class="col">
-						<p>Transfer & Charter<b>transfer@bourbon.mc</b></p>
-						<p>Concierge Service<b> welcome@bourbon.mc</b></p>
-					</div>
-				</div>
-			</div>
+            <div class="contacts-list">
+                <h3>Contact Us</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="office">
+                            <p>Europe Office </p>
+                            <b>+ 33 753 67 43 42<br />email@europe.com</b>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="office">
+                            <p>U.S.A. Office</p>
+                            <b>+ 33 753 67 43 42<br />email@usa.com </b>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p>Advertising <span>& Marketing office</span><b>marketing@bourbon.mc </b></p>
+                        <p>New Business<b>newbusiness@bourbon.mc</b></p>
+                    </div>
+                    <div class="col">
+                        <p>Transfer & Charter<b>transfer@bourbon.mc</b></p>
+                        <p>Concierge Service<b> welcome@bourbon.mc</b></p>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -294,13 +260,5 @@
 </div>
 
 <footer class="section" id="section-footer">
-    <div id="footer-text">
-        <div id="copy-witty">
-            <div class="logo">
-                <span>Made in</span>
-                <a href="http://witty-digital.com" target="_blank"><img src="<?php echo $templateurl; ?>/assets/images/witty-logo.png" alt="copyright witty-digital agency"/></a>
-                <b>Witty Digital</b>
-            </div>
-        </div>
-    </div>
+    <?php get_template_part('parts/witty_copy'); ?>
 </footer>
