@@ -1,27 +1,14 @@
 .box-1{
-  //  background-image: url('../images/bbc_1.jpg');
   background-color: #072439;
 
-//  .box-undertitle{
-//    position:relative;
-//    height: 150px;
-//  }
 
   .box-title{
-//    position: absolute;
-//    display:none;
-//    top:0;
-//    left:0;
-//    width:100%;
+
     font-size:115px;
     line-height: 1em;
     text-align:center;
     max-width: 900px;
     margin: 0 auto 30px;
-//    margin-bottom: 60px;
-//    &.active{
-//      display:block;
-//    }
   }
 
   .fp-tableCell{
@@ -39,84 +26,6 @@
     width:80%;
     margin: 0 auto;
   }
-
-//  .box-description{
-//    position:relative;
-//    height: 220px;
-//    margin-bottom: 30px;
-//    .desc-item{
-//      display:none;
-//      position:absolute;
-//      text-align:center;
-//      width:80%;
-//      margin: 0 auto;
-//      left: 10%;
-//      p{
-//        font-size: 14px;
-//        line-height: 28px;
-//      }
-//      &.active{
-//        display:block;
-//      }
-//    }
-//  }
-
-//  .market-buttons{
-//    text-align: center;
-//    font-size: 0;
-//    margin-top: 30px;
-//    a{
-//      display:block;
-//    }
-//    .btn-item{
-//      font-size: 16px;
-//      display: inline-block;
-//      margin: 0 20px;
-//      figure{
-//        width: 170px;
-//        svg{
-//          height: auto;
-//        }
-//      }
-//    }
-//  }
-//
-//  .box-content{
-//    margin:0 auto;
-//    width:50%;
-//  }
-//  .row{
-//    margin: -20px;
-//  }
-//  .col{
-//    width:50%;
-//    float: left;
-//    padding: 20px;
-//  }
-//  .item-list{
-//    border: 2px solid white;
-//    padding: 10px;
-//    height: 90px;
-//    position: relative;
-//    .items{
-//      position: absolute;
-//      top: 10px;
-//      text-transform: uppercase;
-//      &:before{
-//        content:'+';
-//        display:block;
-//        font-size: 40px;
-//      }
-//    }
-//  }
-//
-//  .trigger{
-//    opacity:.5;
-//    transition: .3s;
-//    &:hover{
-//      opacity:1;
-//    }
-//  }
 }
 
 .box-1.mobile{
@@ -156,17 +65,10 @@
       font-size: 90px;
     }
     .box-description{
-//      height: 260px;
-      .desc-item{
-        p{
-          font-size: 18px;
-
-        }
+      p{
+        font-size: 18px;
       }
     }
-//    .market-buttons {
-//      margin-top: 25px;
-//    }
   }
 }
 
@@ -178,75 +80,14 @@
   }
 }
 
-//@media (max-width: 768px){
-//  .box-1{
-//    .col{
-//      width:50%;
-//    }
-//    .box-description{
-//      height: 290px;
-//    }
-//  }
-//}
-
-//@media (max-width: 640px) {
-//
-//  .box-1 {
-//    .row{
-//      margin: -10px;
-//    }
-//    .col{
-//      padding: 10px;
-//    }
-//  }
-//}
-
 @media (max-width: 580px) {
   .box-1{
-//    .box-undertitle{
-//      height: 100px;
-//    }
     .box-title{
       font-size: 60px;
     }
-//    .box-description{
-//      .desc-item{
-//        text-align: left;
-//        width:100%;
-//        left:0;
-//      }
-//    }
   }
 }
 
-@media (max-width: 460px) {
-  .box-1 {
-//    .box-content {
-//      margin-left: 20px;
-//      margin-right: 20px;
-//
-//    }
-//    .market-buttons{
-//      .btn-item{
-//        margin: 0 10px;
-//        figure {
-//          width: auto;
-//        }
-//      }
-//    }
-
-//    .col {
-//      float: none;
-//      width: 100%;
-//    }
-//    .box-undertitle{
-//      height: 140px;
-//    }
-//    .box-description {
-//      height: 340px;
-//    }
-  }
-}
 
 @media (max-width: 360px) {
 
@@ -256,19 +97,6 @@
         font-size: 60px;
         margin-bottom: 20px;
       }
-//      .box-undertitle p {
-//        font-size: 16px;
-//        line-height: 22px;
-//      }
-//      .box-content {
-//        margin-top: 120px;
-//        .col {
-//          .item-list {
-//            height: 100px;
-//            font-size: 12px;
-//          }
-//        }
-//      }
     }
   }
 }
