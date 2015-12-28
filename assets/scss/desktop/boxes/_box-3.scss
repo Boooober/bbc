@@ -32,10 +32,10 @@
         font-weight: 100;
         margin: 10px 0;
         display: block;
-        span{
-          font-size:20px;
-          line-height: 0;
-        }
+//        span{
+//          font-size:20px;
+//          line-height: 0;
+//        }
       }
       &:hover{
         border: 1px solid rgba(255,255,255,1);
@@ -139,16 +139,16 @@
           font-size: 13px;
           line-height: 16px
         }
-        &:nth-child(3) {
-          .number {
-            position: relative;
-            span {
-              position: absolute;
-              top: 35px;
-              right: 8px;
-            }
-          }
-        }
+//        &:nth-child(3) {
+//          .number {
+//            position: relative;
+//            span {
+//              position: absolute;
+//              top: 35px;
+//              right: 8px;
+//            }
+//          }
+//        }
       }
     }
   }

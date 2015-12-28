@@ -159,20 +159,20 @@
             <div class="row box-content">
                 <div class="col">
                     <div class="box-item">
-                        <span class="number">6</span>
+                        <span class="number"><span class="numbinc">6</span></span>
                         <span class="desc">лет на рынке Luxury услуг</span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="box-item">
-                        <span class="number">130</span>
+                        <span class="number"><span class="numbinc">470</span></span>
                         <span class="desc">клиентов из 23 стран мира</span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="box-item">
-                        <span class="number">90<span>%</span></span>
-                        <span class="desc">клиентов становятся постоянными</span>
+                        <span class="number"><span class="numbinc">24</span>/7</span>
+                        <span class="desc">24 часа в сутки, 7 дней в неделю по всему миру</span>
                     </div>
                 </div>
                 <div class="col">

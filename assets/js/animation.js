@@ -40,6 +40,19 @@
             triggerElement: '#box-3'
         })
             .setTween(b3)
+            .add(function(){
+                setTimeout(function(){
+                    $('#box-3 .numbinc').each(function () {
+                        var $this = $(this);
+                        jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                            duration: 3000,
+                            step: function () {
+                                $this.text(Math.ceil(this.Counter));
+                            }
+                        });
+                    });
+                },1000);
+            })
             .addTo(mainScene);
 
 
