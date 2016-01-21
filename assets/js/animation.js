@@ -40,7 +40,7 @@
             triggerElement: '#box-3'
         })
             .setTween(b3)
-            .add(function(){
+           /* .add(function(){
                 setTimeout(function(){
                     $('#box-3 .numbinc').each(function () {
                         var $this = $(this);
@@ -52,7 +52,7 @@
                         });
                     });
                 },1000);
-            })
+            })*/
             .addTo(mainScene);
 
 

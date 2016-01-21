@@ -8,9 +8,9 @@ get_header(); ?>
 	<div class="container">
 
 		<?php if(bbc_mobile_detect()){
-			get_template_part('parts/home_mob_ru');
+			get_template_part('parts/home_mob_fr');
 		} else{
-			get_template_part('parts/home_desk_ru');
+			get_template_part('parts/home_desk_fr');
 		} ?>
 
 	</div>
