@@ -84,12 +84,8 @@
     position:absolute;
     z-index: 1;
     top:30%;
-
-    border: 1px solid rgba(0,0,0,.3);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background: white;
 
     &:before{
       position: absolute;
@@ -106,7 +102,7 @@
   }
 
   .owl-prev{
-    left: -30px;
+    left: -40px;
     &:before{
       margin-left: 9%;
       border-left-color: black;
@@ -114,7 +110,7 @@
     }
   }
   .owl-next{
-    right: -30px;
+    right: -40px;
     &:before{
       margin-left: -9%;
       border-right-color: black;
@@ -147,6 +143,9 @@
     .owl-prev, .owl-next{
       width: 35px;
       height: 35px;
+      background: white;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,.3);
       &:before{
         font-size: 32px;
       }

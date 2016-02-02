@@ -85,7 +85,7 @@ jQuery( document ).ready(function( $ ) {
     }
 
     function removeNext(){
-        if(window.location.hash == '#'+anchors[anchors.length - 1]){
+        if(window.location.hash == '#'+anchors[anchors.length - 1] || window.location.hash == '#'+anchors[anchors.length - 2]){
             $('.next').css('display', 'none');
         }else{
             $('.next').css('display', 'block');
@@ -94,8 +94,8 @@ jQuery( document ).ready(function( $ ) {
 
 
     // Owl Carusel plugin settings
-    var owl = $('.owl-carousel-events');
-    owl.owlCarousel({
+    var owle = $('.owl-carousel-events');
+    owle.owlCarousel({
         margin:40,
         responsiveClass:true,
         nav: true,
@@ -120,8 +120,8 @@ jQuery( document ).ready(function( $ ) {
         }
     });
 
-    var owl = $('.owl-carousel-news');
-    owl.owlCarousel({
+    var owln = $('.owl-carousel-news');
+    owln.owlCarousel({
         margin:40,
         responsiveClass:true,
         nav: true,

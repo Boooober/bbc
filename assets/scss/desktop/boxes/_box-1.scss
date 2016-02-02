@@ -1,9 +1,7 @@
 .box-1{
   background-color: #072439;
 
-
   .box-title{
-
     font-size:115px;
     line-height: 1em;
     text-align:center;
@@ -25,6 +23,15 @@
     text-align:center;
     width:80%;
     margin: 0 auto;
+  }
+
+  .market-buttons{
+    text-align:center;
+    margin-top: 35px;
+    .btn-item{
+      display: inline-block;
+      margin: 0 5px;
+    }
   }
 }
 
